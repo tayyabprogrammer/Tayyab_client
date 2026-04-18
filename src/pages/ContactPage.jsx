@@ -2,6 +2,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { sendContactMessage } from '../services/api'
+import { FaGithub, FaLinkedin,  FaTiktok, FaYoutube } from 'react-icons/fa';
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
@@ -41,17 +42,37 @@ const ContactPage = () => {
   }
 
   const contactInfo = [
-    { icon: '📧', label: 'Email', value: 'hello@tayyab.com', detail: 'Send me an email anytime', color: '#00ffff' },
-    { icon: '📱', label: 'Phone', value: '+92 300 1234567', detail: 'Mon-Fri, 9AM to 6PM', color: '#ff00ff' },
-    { icon: '📍', label: 'Location', value: 'Karachi, Pakistan', detail: 'Available for remote work', color: '#ffff00' }
+    { icon: '📧', label: 'Email', value: 'tayyabmughal7272@gmail.com', detail: 'Send me an email anytime', color: '#00ffff' },
+    { icon: '📱', label: 'Phone', value: '+92 3408566694', detail: 'Mon-Sun, 9AM to 6PM', color: '#ff00ff' },
+    { icon: '📍', label: 'Location', value: 'Islamabad, Pakistan', detail: 'Available for remote work', color: '#ffff00' }
   ]
 
-  const socialLinks = [
-    { name: 'GitHub', icon: '💻', url: 'https://github.com/yourname', color: '#ffffff' },
-    { name: 'LinkedIn', icon: '🔗', url: 'https://linkedin.com/in/yourname', color: '#0077b5' },
-    { name: 'Twitter', icon: '🐦', url: 'https://twitter.com/yourname', color: '#1da1f2' },
-    { name: 'Instagram', icon: '📸', url: 'https://instagram.com/yourname', color: '#e4405f' }
-  ]
+const socialLinks = [
+  { 
+    name: 'GitHub', 
+    icon: <FaGithub size={24} />, 
+    url: 'https://github.com/tayyabprogrammer', 
+    color: '#ffffff' 
+  },
+  { 
+    name: 'LinkedIn', 
+    icon: <FaLinkedin size={24} />, 
+    url: 'https://www.linkedin.com/in/m-tayyab-tahir/', 
+    color: '#0077b5' 
+  },
+  { 
+    name: 'Tiktok', 
+    icon: <FaTiktok size={24} />, 
+    url: 'https://www.tiktok.com/@codesman0', 
+    color: '#1da1f2' 
+  },
+  { 
+    name: 'YouTube', 
+    icon: <FaYoutube size={24} />, 
+    url: 'https://www.youtube.com/@codesman0', 
+    color: '#e4405f' 
+  }
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
