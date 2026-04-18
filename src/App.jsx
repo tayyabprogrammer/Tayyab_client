@@ -4,7 +4,7 @@ import { AdminProvider, useAdmin } from './context/AdminContext'
 import HeroBackground from './Components/3D/HeroBackground'
 import Navbar from './Components/ui/Navbar'
 import Footer from './Components/Sections/Footer'
-import WhatsAppButton from './Components/ui/WhatsAppButton'
+import WhatsAppButton from './Components/ui/WhatsappButton'
 import Loader from './Components/ui/Loader'
 
 // Lazy load pages for code splitting
