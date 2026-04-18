@@ -1,0 +1,93 @@
+@import "tailwindcss";
+.heading{
+    color: blue;
+}
+/* Fix for admin panel */
+.admin-main-content {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.admin-main-content > div {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Responsive table/cards */
+@media (max-width: 768px) {
+  .admin-card {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+  
+  .admin-card-buttons {
+    margin-top: 15px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+/* Custom Scrollbar - Webkit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 20, 0.8);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00ffff, #ff00ff);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #00ffff, #ff00ff);
+  box-shadow: 0 0 10px rgba(0,255,255,0.5);
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #00ffff rgba(10, 10, 20, 0.8);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* For the body */
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+/* Extra glow effect */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #00ffff, #ff00ff);
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,255,255,0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #00ffff, #ff00ff);
+  box-shadow: 0 0 15px rgba(0,255,255,0.6);
+}
+/* Custom Cursor Color - Original cursor ka color change */
+body {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27"><polygon points="2,2 22,13 12,16 2,22" fill="%2300ffff" stroke="%23ff00ff" stroke-width="1.5"/><circle cx="12" cy="13" r="3" fill="%23ffffff"/></svg>') 4 4, auto;
+}
+
+/* For links and buttons - hover effect */
+a:hover, button:hover, [role="button"]:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="31" viewBox="0 0 24 27"><polygon points="2,2 22,13 12,16 2,22" fill="%23ff00ff" stroke="%2300ffff" stroke-width="1.5"/><circle cx="12" cy="13" r="3" fill="%23ffffff"/></svg>') 4 4, pointer;
+}
+
+/* For inputs */
+input:hover, textarea:hover, select:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="27" viewBox="0 0 24 27"><polygon points="2,2 22,13 12,16 2,22" fill="%2300ffff" stroke="%23ff00ff" stroke-width="1.5"/><circle cx="12" cy="13" r="3" fill="%23ffffff"/></svg>') 4 4, text;
+}
