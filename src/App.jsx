@@ -9,8 +9,8 @@ import Loader from './Components/ui/Loader'
 
 // Lazy load pages for code splitting
 const Home = lazy(() => import('./pages/Home'))
-const Home = lazy(() => import('./pages/PrivacyPolicy'))
-const Home = lazy(() => import('./pages/TermsOfService'))
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))  // ✅ Alag name
+const TermsOfService = lazy(() => import('./pages/TermsOfService'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage'))
 const ContactPage = lazy(() => import('./pages/ContactPage'))
