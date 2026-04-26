@@ -9,11 +9,14 @@ import Loader from './Components/ui/Loader'
 
 // Lazy load pages for code splitting
 const Home = lazy(() => import('./pages/Home'))
+const Home = lazy(() => import('./pages/PrivacyPolicy'))
+const Home = lazy(() => import('./pages/TermsOfService'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const ProjectsPage = lazy(() => import('./pages/ProjectsPage'))
 const ContactPage = lazy(() => import('./pages/ContactPage'))
 const Blogs = lazy(() => import('./pages/Blogs'))
 const BlogDetail = lazy(() => import('./pages/BlogDetail'))
+
 
 // Lazy load admin pages
 const AdminLogin = lazy(() => import('./pages/admin/AdminLogin'))
@@ -80,6 +83,8 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/blog/:id" element={<BlogDetail />} />
+              <Route path="/privacy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<TermsOfService />} />
               
               {/* Admin Routes */}
               <Route path="/admin/login" element={<AdminLogin />} />
