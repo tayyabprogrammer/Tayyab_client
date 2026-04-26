@@ -83,8 +83,8 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/blog/:id" element={<BlogDetail />} />
-              <Route path="/privacy" element={<PrivacyPolicy />} />
-              <Route path="/terms" element={<TermsOfService />} />
+              <Route path="/privacy" element={<PrivacyPolicy/>} />
+              <Route path="/terms" element={<TermsOfService/>} />
               
               {/* Admin Routes */}
               <Route path="/admin/login" element={<AdminLogin />} />
